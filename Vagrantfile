@@ -6,8 +6,9 @@ Vagrant.configure("2") do |config|
   config.vm.provision :chef_solo do |chef|
     chef.add_recipe "build_essential"
     chef.add_recipe "python"
-    chef.add_recipe "circonus"
-    chef.add_recipe "nad"
+    # commenting these out while I just test basic Vagrant
+    #chef.add_recipe "circonus"
+    #chef.add_recipe "nad"
     chef.json = { package "git" }
   end
 end
