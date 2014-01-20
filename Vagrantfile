@@ -9,11 +9,13 @@ Vagrant.configure("2") do |config|
     # commenting these out while I just test basic Vagrant
     #chef.add_recipe "circonus"
     #chef.add_recipe "nad"
-    "sshkey" => {
-      "user" => "vagrant",
-      "group" => "vagrant",
-      "public_key" => IO.read(File.expand_path("~/.ssh/id_rsa.pub")),
-      "private_key" => IO.read(File.expand_path("~/.ssh/id_rsa"))
+    chef.json = {
+      "sshkey" => {
+        "user" => "vagrant",
+        "group" => "vagrant",
+        "public_key" => IO.read(File.expand_path("~/.ssh/id_rsa.pub")),
+        "private_key" => IO.read(File.expand_path("~/.ssh/id_rsa"))
+      }
     }
     chef.add_recipe "basic-setup"
   end
