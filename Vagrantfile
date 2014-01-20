@@ -13,8 +13,8 @@ Vagrant.configure("2") do |config|
       "sshkey" => {
         "user" => "vagrant",
         "group" => "vagrant",
-        "public_key" => IO.read(File.expand_path("~/.ssh/id_rsa.pub")),
-        "private_key" => IO.read(File.expand_path("~/.ssh/id_rsa"))
+        "public_key" => IO.read(File.expand_path("~/.ssh/id_dsa.pub")),
+        "private_key" => IO.read(File.expand_path("~/.ssh/id_dsa"))
       }
     }
     chef.add_recipe "basic-setup"
