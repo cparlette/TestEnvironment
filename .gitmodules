@@ -10,3 +10,9 @@
 [submodule "cookbooks/nad"]
 	path = cookbooks/nad
 	url = git@github.com:circonus-labs/nad-cookbook.git
+[submodule "cookbooks/nodejs"]
+	path = cookbooks/nodejs
+	url = git@github.com:mdxp/nodejs-cookbook.git
+[submodule "cookbooks/apt"]
+	path = cookbooks/apt
+	url = git@github.com:opscode-cookbooks/apt.git

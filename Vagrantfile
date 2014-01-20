@@ -18,5 +18,7 @@ Vagrant.configure("2") do |config|
       }
     }
     chef.add_recipe "basic-setup"
+    chef.add_recipe "apt"
+    chef.add_recipe "nodejs"
   end
 end
