@@ -1,0 +1,12 @@
+[submodule "cookbooks/python"]
+	path = cookbooks/python
+	url = git@github.com:poise/python.git
+[submodule "cookbooks/build-essential"]
+	path = cookbooks/build-essential
+	url = git@github.com:opscode-cookbooks/build-essential.git
+[submodule "cookbooks/circonus"]
+	path = cookbooks/circonus
+	url = git@github.com:circonus-labs/circonus-cookbook.git
+[submodule "cookbooks/nad"]
+	path = cookbooks/nad
+	url = git@github.com:circonus-labs/nad-cookbook.git
