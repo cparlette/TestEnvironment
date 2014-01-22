@@ -7,9 +7,6 @@ Vagrant.configure("2") do |config|
     chef.add_recipe "apt"
     chef.add_recipe "build-essential"
     chef.add_recipe "python"
-    # commenting these out while I just test basic Vagrant
-    #chef.add_recipe "circonus"
-    #chef.add_recipe "nad"
     chef.json = {
       "sshkey" => {
         "user" => "vagrant",
@@ -20,5 +17,7 @@ Vagrant.configure("2") do |config|
     }
     chef.add_recipe "basic-setup"
     chef.add_recipe "nodejs"
+    chef.add_recipe "nad"
+    #chef.add_recipe "circonus"
   end
 end
