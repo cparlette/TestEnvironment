@@ -3,7 +3,7 @@
 end
 
 # setup ssh keys
-file "#{home_dir}/.ssh/id_rsa" do
+file "/home/vagrant/.ssh/id_rsa" do
   owner node['sshkey']['user']
   group node['sshkey']['group']
   mode "0600"
@@ -11,7 +11,7 @@ file "#{home_dir}/.ssh/id_rsa" do
   action :create
 end
 
-file "#{home_dir}/.ssh/id_rsa.pub" do
+file "/home/vagrant/.ssh/id_rsa.pub" do
   owner node['sshkey']['user']
   group node['sshkey']['group']
   mode "0600"
